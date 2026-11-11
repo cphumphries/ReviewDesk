@@ -1,0 +1,600 @@
+{
+ "question_types": [
+  {
+   "id": "intervention",
+   "label": "Effects of an intervention",
+   "framework": "pico",
+   "core": [
+    "medline",
+    "embase",
+    "central"
+   ],
+   "consider": [
+    "cinahl",
+    "psycinfo",
+    "scopus",
+    "wos",
+    "registers"
+   ],
+   "note": "Cochrane expects at least CENTRAL, MEDLINE and Embase (MECIR C24, C27), plus trial registers, for a review of interventions. Add CINAHL for nursing and allied health topics and APA PsycInfo for mental health."
+  },
+  {
+   "id": "diagnostic",
+   "label": "Diagnostic or test accuracy",
+   "framework": "pird",
+   "core": [
+    "medline",
+    "embase"
+   ],
+   "consider": [
+    "cinahl",
+    "scopus",
+    "wos",
+    "central"
+   ],
+   "note": "Search for the population, the index test and (if needed) the target condition. Do not add a methodological filter for accuracy studies: no filter has been found sensitive enough to use on its own."
+  },
+  {
+   "id": "prognostic",
+   "label": "Prognosis or prediction models",
+   "framework": "picots",
+   "core": [
+    "medline",
+    "embase"
+   ],
+   "consider": [
+    "cinahl",
+    "psycinfo",
+    "scopus",
+    "wos"
+   ],
+   "note": "Published search filters for prediction-model studies reduce what you find; use them only with care and test them against known studies."
+  },
+  {
+   "id": "qualitative",
+   "label": "Qualitative evidence (experiences, views)",
+   "framework": "spider",
+   "core": [
+    "medline",
+    "cinahl",
+    "psycinfo"
+   ],
+   "consider": [
+    "embase",
+    "scopus",
+    "wos"
+   ],
+   "note": "Qualitative studies are often poorly indexed: rely on free-text terms as well as headings, and consider theses and reports."
+  },
+  {
+   "id": "prevalence",
+   "label": "Prevalence or incidence",
+   "framework": "cocopop",
+   "core": [
+    "medline",
+    "embase"
+   ],
+   "consider": [
+    "cinahl",
+    "psycinfo",
+    "scopus",
+    "wos"
+   ],
+   "note": ""
+  },
+  {
+   "id": "aetiology",
+   "label": "Aetiology or risk factors",
+   "framework": "peo",
+   "core": [
+    "medline",
+    "embase"
+   ],
+   "consider": [
+    "cinahl",
+    "psycinfo",
+    "scopus",
+    "wos"
+   ],
+   "note": ""
+  },
+  {
+   "id": "scoping",
+   "label": "Scoping review (mapping the evidence)",
+   "framework": "pcc",
+   "core": [
+    "medline",
+    "embase",
+    "cinahl"
+   ],
+   "consider": [
+    "psycinfo",
+    "scopus",
+    "wos",
+    "registers"
+   ],
+   "note": "Scoping reviews usually add grey literature: reports from the organisations that work in the field."
+  },
+  {
+   "id": "other",
+   "label": "Other",
+   "framework": "pico",
+   "core": [
+    "medline",
+    "embase"
+   ],
+   "consider": [
+    "cinahl",
+    "psycinfo",
+    "scopus",
+    "wos",
+    "central"
+   ],
+   "note": ""
+  }
+ ],
+ "frameworks": {
+  "pico": {
+   "label": "PICO",
+   "elements": [
+    [
+     "P",
+     "Population or problem",
+     "Who are the patients or setting?"
+    ],
+    [
+     "I",
+     "Intervention",
+     "What is done to them?"
+    ],
+    [
+     "C",
+     "Comparator",
+     "Compared with what? (rarely searched for)"
+    ],
+    [
+     "O",
+     "Outcome",
+     "What is measured? (rarely searched for)"
+    ]
+   ]
+  },
+  "pird": {
+   "label": "PIRD",
+   "elements": [
+    [
+     "P",
+     "Population",
+     "Who is tested?"
+    ],
+    [
+     "I",
+     "Index test",
+     "Which test?"
+    ],
+    [
+     "R",
+     "Reference standard",
+     "Against what? (rarely searched for)"
+    ],
+    [
+     "D",
+     "Diagnosis or target condition",
+     "Which condition?"
+    ]
+   ]
+  },
+  "picots": {
+   "label": "PICOTS",
+   "elements": [
+    [
+     "P",
+     "Population",
+     ""
+    ],
+    [
+     "I",
+     "Index model or factor",
+     ""
+    ],
+    [
+     "C",
+     "Comparator",
+     ""
+    ],
+    [
+     "O",
+     "Outcome predicted",
+     ""
+    ],
+    [
+     "T",
+     "Timing",
+     ""
+    ],
+    [
+     "S",
+     "Setting",
+     ""
+    ]
+   ]
+  },
+  "spider": {
+   "label": "SPIDER",
+   "elements": [
+    [
+     "S",
+     "Sample",
+     ""
+    ],
+    [
+     "PI",
+     "Phenomenon of interest",
+     ""
+    ],
+    [
+     "D",
+     "Design",
+     ""
+    ],
+    [
+     "E",
+     "Evaluation",
+     ""
+    ],
+    [
+     "R",
+     "Research type",
+     ""
+    ]
+   ]
+  },
+  "cocopop": {
+   "label": "CoCoPop",
+   "elements": [
+    [
+     "Co",
+     "Condition",
+     ""
+    ],
+    [
+     "Co",
+     "Context",
+     ""
+    ],
+    [
+     "Pop",
+     "Population",
+     ""
+    ]
+   ]
+  },
+  "peo": {
+   "label": "PEO",
+   "elements": [
+    [
+     "P",
+     "Population",
+     ""
+    ],
+    [
+     "E",
+     "Exposure",
+     ""
+    ],
+    [
+     "O",
+     "Outcome",
+     ""
+    ]
+   ]
+  },
+  "pcc": {
+   "label": "PCC",
+   "elements": [
+    [
+     "P",
+     "Population",
+     ""
+    ],
+    [
+     "C",
+     "Concept",
+     ""
+    ],
+    [
+     "C",
+     "Context",
+     ""
+    ]
+   ]
+  }
+ },
+ "steps": [
+  "Write the question in the framework, then pick the two or three concepts that define it. Outcomes and comparators are usually left out of the search, because abstracts rarely mention them reliably.",
+  "For each concept, list the free-text words people use for it: synonyms, abbreviations, British and American spellings, singular and plural (use truncation), and the subject heading each database uses.",
+  "Combine the terms for one concept with OR, then combine the concepts with AND.",
+  "List studies you already know should be found, and check the search finds every one. Read a sample of what it retrieves; adjust the terms if it misses relevant studies.",
+  "Translate the search for each database: field codes, truncation and proximity work differently on each platform, and each database has its own subject headings. Proximity numbers are counted differently too: Ovid adj4 = Cochrane NEAR/4 = EBSCO N3 = Scopus W/3 = Web of Science NEAR/3 = PubMed ~3 (each allows up to three words in between).",
+  "Ask a librarian to peer review the strategy (for example with the PRESS 2015 guideline: McGowan J, et al. J Clin Epidemiol 2016;75:40-6), and record that they did.",
+  "Record the date each search was run, the database and platform, the years covered, the exact strategy, any limits, and the number of results (PRISMA-S). Cochrane requires searches to be rerun within 12 months before the review is published (MECIR C37); within 6 months is better."
+ ],
+ "checklist": [
+  "The question: do the concepts searched match the review question, with none missing and none that narrows it needlessly?",
+  "Combining terms: do AND, OR, NOT and any adjacency operators join the terms as intended, with each OR group in brackets? Could a NOT line drop eligible records, or an adjacency width be too tight or too loose?",
+  "Index terms: are this database's own index terms (such as MeSH or Emtree) the best fit for each concept, expanded to their narrower terms where those matter? Is every concept searched with index terms and with words in the title and abstract?",
+  "Words in the title and abstract: does each concept have its synonyms, British and American spellings and abbreviations, in suitable fields? Does each wildcard or truncation pick up the endings wanted and not unrelated words?",
+  "Typing and set numbers: is every term spelled correctly, is the syntax right for this platform (not copied from another), and does the final line combine every set it should?",
+  "Restrictions: is each restriction (dates, language, study design) set out in the protocol, and is each published search filter cited? Cochrane advises against restricting by language (MECIR C35)."
+ ],
+ "databases": [
+  {
+   "id": "medline",
+   "name": "MEDLINE",
+   "platforms": "Ovid (MEDLINE ALL), PubMed (free), EBSCO",
+   "headings": "MeSH",
+   "what": "The US National Library of Medicine's biomedical database, from 1946.",
+   "tip": "Search one version only: Ovid MEDLINE ALL and PubMed hold the same records, including in-process and ahead-of-print records, so searching both only adds duplicates."
+  },
+  {
+   "id": "embase",
+   "name": "Embase",
+   "platforms": "Ovid, embase.com (Elsevier)",
+   "headings": "Emtree",
+   "what": "Biomedical and pharmacological literature with strong European and conference coverage. It holds MEDLINE's records too, but not the records found only in PubMed, so MEDLINE (or PubMed) is still searched separately.",
+   "tip": "Embase holds millions of conference abstracts. Cochrane counts them as worth searching (MECIR C28), so remove them only if your protocol says so, and report it."
+  },
+  {
+   "id": "central",
+   "name": "Cochrane CENTRAL",
+   "platforms": "Cochrane Library",
+   "headings": "MeSH",
+   "what": "Reports of randomised and quasi-randomised trials, drawn from MEDLINE, Embase, trial registers and hand-searching.",
+   "tip": "Export from the Trials tab only."
+  },
+  {
+   "id": "cinahl",
+   "name": "CINAHL",
+   "platforms": "EBSCO (CINAHL Plus, Complete or Ultimate)",
+   "headings": "CINAHL Subject Headings",
+   "what": "Nursing and allied health literature, including journals the medical databases miss.",
+   "tip": "Switch off 'Apply equivalent subjects', autocorrect and (on the newer platform) AI-assisted search, so the search runs exactly as written."
+  },
+  {
+   "id": "psycinfo",
+   "name": "APA PsycInfo",
+   "platforms": "Ovid, EBSCO",
+   "headings": "APA Thesaurus of Psychological Index Terms",
+   "what": "Psychology, psychiatry and the behavioural and social sciences.",
+   "tip": ""
+  },
+  {
+   "id": "scopus",
+   "name": "Scopus",
+   "platforms": "Elsevier",
+   "headings": "None of its own (its indexed keywords include MeSH and Emtree headings)",
+   "what": "A large multidisciplinary abstract and citation database; useful for finding who has cited a study.",
+   "tip": "TITLE-ABS-KEY also searches indexed keywords, which can add many irrelevant records; TITLE-ABS plus AUTHKEY is more precise."
+  },
+  {
+   "id": "wos",
+   "name": "Web of Science Core Collection",
+   "platforms": "Clarivate",
+   "headings": "None (Keywords Plus are generated automatically)",
+   "what": "A multidisciplinary citation database. The Core Collection covers the sciences, social sciences, and arts and humanities, including conference proceedings and books.",
+   "tip": "Exports are limited to 1,000 records at a time."
+  },
+  {
+   "id": "registers",
+   "name": "Trial registers",
+   "platforms": "ClinicalTrials.gov; WHO ICTRP (which also searches national registers such as ANZCTR and ISRCTN)",
+   "headings": "None",
+   "what": "Ongoing and completed trials, including ones never published.",
+   "tip": "Search ClinicalTrials.gov and the WHO ICTRP portal separately: the portal does not hold every ClinicalTrials.gov record. ClinicalTrials.gov accepts AND, OR, NOT, brackets and quoted phrases but not truncation, and adds related terms by itself. Keep register searches simple and sensitive, and record the number of registrations found."
+  },
+  {
+   "id": "epistemonikos",
+   "name": "Epistemonikos",
+   "platforms": "epistemonikos.org (free)",
+   "headings": "None",
+   "what": "Systematic reviews in health, with links to the studies they include.",
+   "tip": "Useful before you start, to find existing reviews whose reference lists you can check."
+  }
+ ],
+ "platforms": [
+  {
+   "id": "ovid",
+   "name": "Ovid (MEDLINE, Embase, PsycInfo)",
+   "rows": [
+    [
+     "Several endings",
+     "therap* or therap$ (any ending); therap$2 (up to two more letters)"
+    ],
+    [
+     "One optional letter",
+     "colo?r finds color and colour"
+    ],
+    [
+     "Phrase",
+     "type the words as they are: emergency department"
+    ],
+    [
+     "Near each other",
+     "emergency adj3 department (up to two words in between, either order: adjN allows N−1 words between); adj alone means next to each other, in this order"
+    ],
+    [
+     "Title and abstract",
+     "triag*.ti,ab."
+    ],
+    [
+     "Author keywords",
+     "triag*.ti,ab,kf. (.kf. is author keywords, word by word, in both Ovid MEDLINE and Ovid Embase; avoid .kw. with truncation, because it matches whole keyword phrases)"
+    ],
+    [
+     "Subject heading",
+     "exp Triage/ (with narrower headings); Triage/ (this heading only); *Triage/ (major focus)"
+    ],
+    [
+     "Combining lines",
+     "1 or 2 or 3; or/1-6; 7 and 14; 28 not (29 or 30)"
+    ],
+    [
+     "Before you type",
+     "Untick 'Map Term to Subject Heading' when entering prepared lines, or Ovid will rewrite them."
+    ]
+   ],
+   "export": "Select all results (or a range), choose Export, choose RIS as the format and include the abstract (Complete Reference). Export large sets in ranges such as 1–1000, 1001–2000."
+  },
+  {
+   "id": "ebsco",
+   "name": "EBSCO (CINAHL; PsycInfo on EBSCO)",
+   "rows": [
+    [
+     "Several endings",
+     "therap*"
+    ],
+    [
+     "One letter",
+     "wom?n (exactly one letter); colo#r (one or no letter)"
+    ],
+    [
+     "Phrase",
+     "\"emergency department\""
+    ],
+    [
+     "Near each other",
+     "emergency N3 department (up to three words in between, either order); W3 keeps the order"
+    ],
+    [
+     "Title and abstract",
+     "TI triag* OR AB triag*"
+    ],
+    [
+     "Subject heading",
+     "(MH \"Triage\") this heading; (MH \"Emergency Service+\") with narrower headings; (MM \"Triage\") major heading"
+    ],
+    [
+     "Combining searches",
+     "In the search history: S1 AND S2 AND S3"
+    ],
+    [
+     "Before you search",
+     "In Search options, switch off 'Apply equivalent subjects' (and 'Apply related words' if it is offered) and autocorrect; on the newer EBSCO platform also switch off AI-assisted search. Use the Boolean/Phrase (Proximity) search mode, never SmartText; if a results page says it used SmartText, the search did not run as written. Put phrases in quotes."
+    ]
+   ],
+   "export": "Select the results and choose Export (or Download) with the RIS format. Small sets download straight away; for large sets, sign in to My EBSCO and EBSCO emails a download link (the limit per export is shown on screen). EBSCO may remove duplicates when it builds the file, so the file can hold fewer records than the hit count: record both numbers in the search log."
+  },
+  {
+   "id": "scopus",
+   "name": "Scopus",
+   "rows": [
+    [
+     "Title, abstract, keywords",
+     "TITLE-ABS-KEY(triag*); TITLE-ABS(triag*); AUTHKEY(triag*)"
+    ],
+    [
+     "Several endings",
+     "triag*"
+    ],
+    [
+     "Phrase",
+     "\"emergency department\" (plurals and punctuation ignored); {emergency department} (exact)"
+    ],
+    [
+     "Near each other",
+     "emergency W/3 department (up to three words in between, either order); PRE/3 keeps the order"
+    ],
+    [
+     "Document types",
+     "AND NOT DOCTYPE(re OR ed OR no) removes reviews, editorials and notes. Use it only if your protocol excludes these types: Cochrane advises against publication-type limits (MECIR C35)."
+    ],
+    [
+     "Where to type",
+     "Advanced document search: paste the whole query."
+    ]
+   ],
+   "export": "Sign in to Scopus first (exporting needs an account). Select all, choose Export, then RIS, and tick Abstract and keywords. Scopus limits how many records one export can hold (library guides give 20,000): if the set is larger, export it in ranges and check the parts add up."
+  },
+  {
+   "id": "cochrane",
+   "name": "Cochrane Library (CENTRAL)",
+   "rows": [
+    [
+     "Title, abstract, keywords",
+     "triag*:ti,ab,kw"
+    ],
+    [
+     "Phrase",
+     "\"emergency department\""
+    ],
+    [
+     "Near each other",
+     "emergency NEAR/3 department (up to two words in between, either order, like Ovid adj3; NEAR alone means within six); emergency NEXT depart* (adjacent, in order; use NEXT with truncation in phrases)"
+    ],
+    [
+     "Subject heading",
+     "[mh \"Triage\"] with narrower headings; [mh ^\"Triage\"] this heading only"
+    ],
+    [
+     "Combining lines",
+     "#1 AND #2 AND #3 in Search manager"
+    ]
+   ],
+   "export": "Open the Trials tab of the final line, select all, choose Export selected citation(s) and choose RIS (or the plain-text format; ReviewDesk reads both). Up to 20,000 citations per export: split a larger set by year. If the Export button does nothing, the site's cookie setting may be blocking it: accepting the site's cookies fixes it."
+  },
+  {
+   "id": "pubmed",
+   "name": "PubMed",
+   "rows": [
+    [
+     "Title and abstract",
+     "triag*[tiab]"
+    ],
+    [
+     "Phrase",
+     "\"emergency department\"[tiab]"
+    ],
+    [
+     "Near each other",
+     "\"emergency department\"[tiab:~3] (up to three words in between, any order; truncation cannot be used inside the quotes)"
+    ],
+    [
+     "Subject heading",
+     "Triage[mh] (with narrower headings); Triage[mh:noexp] (this heading only); Triage[majr] (major focus)"
+    ],
+    [
+     "Combining",
+     "#1 AND #2 in Advanced search history"
+    ]
+   ],
+   "export": "Choose Send to, then Citation manager, then All results, then Create file. It saves a .nbib file of up to 10,000 records. There is no range option: if there are more results, split the search by publication date (for example add AND 2015:2020[dp]) and export each part."
+  },
+  {
+   "id": "wos",
+   "name": "Web of Science",
+   "rows": [
+    [
+     "Topic (title, abstract, keywords)",
+     "TS=(triag*)"
+    ],
+    [
+     "Title only",
+     "TI=(triag*)"
+    ],
+    [
+     "Several endings",
+     "triag*; colo$r (one or no letter); wom?n (one letter)"
+    ],
+    [
+     "Near each other",
+     "emergency NEAR/3 department (up to three words in between, either order)"
+    ],
+    [
+     "Combining",
+     "#1 AND #2 in Advanced search"
+    ]
+   ],
+   "export": "Choose Export, then RIS (other reference software), with Full record. Web of Science exports up to 1,000 records at a time: export in ranges."
+  }
+ ]
+}

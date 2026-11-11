@@ -1,0 +1,11 @@
+# How much of ReviewDesk's Python the tests run (CONTRIBUTING.md, "Coverage"). Branches are counted as well as lines,
+# and the ReviewDesk programs that the tests start are measured too.
+[run]
+branch = true
+parallel = true
+source = app/reviewdesk
+patch = subprocess
+sigterm = true
+
+[report]
+precision = 1

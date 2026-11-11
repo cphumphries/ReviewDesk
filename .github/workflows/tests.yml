@@ -1,0 +1,121 @@
+# ReviewDesk's tests on the three systems its users have, with the oldest and the newest Python it supports (3.9 and
+# 3.15) and the one in the Windows download (3.14), and once more on Ubuntu with Playwright and Chromium, so that the
+# tests that open the pages in a browser run too (they are skipped elsewhere). ReviewDesk itself needs only the
+# Python standard library; the tests need pytest.
+# No test uses the network or a real AI service: the AI service, OneDrive and the second computer are all stand-ins
+# on the runner itself.
+name: tests
+
+on:
+  push:
+    branches: ["**"]              # (not for a tag: a release's tag is a commit that has been tested already)
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      slow:
+        description: "Also run the 3,000-record runs (marked slow)"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 3 * * 1"          # every Monday: the full suite, the 3,000-record runs included
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.os }}, Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # The newest Python: what python.org gives a Mac user today.
+          - { os: ubuntu-latest, python: "3.15" }
+          - { os: windows-latest, python: "3.15" }
+          - { os: macos-latest, python: "3.15" }
+          # The Python in the Windows download (tools/build_release.py names it).
+          - { os: windows-latest, python: "3.14" }
+          - { os: ubuntu-latest, python: "3.14" }
+          # The oldest. Python 3.9 is past its end of life, and GitHub has builds of it for some systems only:
+          # for Ubuntu 22.04 and 24.04 but none for 26.04, so this job names its Ubuntu (ubuntu-latest will move on);
+          - { os: ubuntu-24.04, python: "3.9" }
+          # for Windows up to 3.9.13, the last version python.org built for Windows;
+          - { os: windows-latest, python: "3.9" }
+          # and, for every 3.9 after 3.9.13, for Intel Macs only, so this job runs on one.
+          - { os: macos-15-intel, python: "3.9" }
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONDONTWRITEBYTECODE: "1"
+      # PYTHONUTF8 is deliberately not set: each Python is tested with the encodings its users really get (on Windows
+      # cp1252 for files up to Python 3.14, and UTF-8 from 3.15, where UTF-8 mode became the default).
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install pytest (ReviewDesk needs nothing else)
+        run: python -m pip install --upgrade pip pytest
+
+      - name: Show the versions
+        run: |
+          python --version
+          python -m pytest --version
+
+      - name: Run the tests
+        run: python -m pytest -ra --durations=15 --basetemp="${{ runner.temp }}/pytest"
+
+      - name: Run the 3,000-record runs
+        if: github.event_name == 'schedule' || inputs.slow
+        run: python -m pytest -ra -m slow --durations=5 --basetemp="${{ runner.temp }}/pytest-slow"
+
+      - name: Keep the logs of the ReviewDesk programs the tests started, if anything failed
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: logs-${{ matrix.os }}-py${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/**/server.log
+            ${{ runner.temp }}/**/errors.jsonl
+          if-no-files-found: ignore
+          retention-days: 7
+
+  browser:
+    name: ubuntu-latest, Python 3.13, with the pages in Chromium
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Install pytest, Playwright and Chromium
+        run: |
+          python -m pip install --upgrade pip pytest playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Run the tests, the browser tests included
+        run: python -m pytest -ra --durations=15 --basetemp="${{ runner.temp }}/pytest"
+
+      - name: Keep the logs of the ReviewDesk programs the tests started, if anything failed
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: logs-browser
+          path: |
+            ${{ runner.temp }}/**/server.log
+            ${{ runner.temp }}/**/errors.jsonl
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1208.8" viewBox="0 0 1680 1208.8" font-family="Plex, 'IBM Plex Sans', 'Segoe UI', Arial, Helvetica, sans-serif" role="img" aria-labelledby="tll-t tll-d" data-variant="landscape"><title id="tll-t">The steps of a systematic review in ReviewDesk</title><desc id="tll-d">19 steps in 7 phases: Plan (steps 1 to 2); Search (steps 3 to 5); Screen titles and abstracts (steps 6 to 10); Full texts (steps 11 to 13); Extract and appraise (steps 14 to 16); Synthesise and rate certainty (steps 17 to 18); Report (step 19). At step 9, the agreement rule decides whether one reviewer or both screen the rest.</desc>
+<defs><marker id="tll-ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0.8 L9.2,5 L0,9.2 z" fill="#2D5A88"/></marker></defs>
+<rect x="0" y="0" width="1680" height="1208.8" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<text x="38" y="68" font-size="32" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600">The steps of a systematic review in ReviewDesk</text>
+<text x="38" y="101" font-size="15.5" fill="#56616E">An example plan: both reviewers screen 100 calibration records and a random 20% agreement sample. If they agree well enough, one reviewer screens the</text>
+<text x="38" y="124" font-size="15.5" fill="#56616E">rest, with the AI second screener behind them.</text>
+<circle cx="1223.5" cy="47.4" r="3" fill="#56616E"/><path d="M1218.5,56.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="1248" y="54" font-size="12.6" fill="#56616E">One person</text>
+<circle cx="1219.5" cy="72.9" r="3" fill="#56616E"/><path d="M1214.5,82 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="1226.5" cy="72.9" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M1221.5,82 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="1248" y="79.5" font-size="12.6" fill="#56616E">Both reviewers, independently (neither sees the other&#x27;s answers)</text>
+<rect x="1212" y="94" width="26" height="14" rx="3" fill="#FFFFFF" stroke="#6F7B88" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="1248" y="105" font-size="12.6" fill="#56616E">Done outside ReviewDesk</text>
+<polygon points="38,176 228.6,176 244.6,209 228.6,242 38,242 38,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="48" y="215" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Plan</text>
+<polygon points="228.6,176 425.2,176 441.2,209 425.2,242 228.6,242 244.6,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="254.6" y="215" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Search</text>
+<polygon points="425.2,176 877.3,176 893.3,209 877.3,242 425.2,242 441.2,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="451.2" y="215" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Screen titles and abstracts</text>
+<polygon points="877.3,176 1073.9,176 1089.9,209 1073.9,242 877.3,242 893.3,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="903.3" y="215" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Full texts</text>
+<polygon points="1073.9,176 1270.4,176 1286.4,209 1270.4,242 1073.9,242 1089.9,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="1099.9" y="205" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Extract and</text>
+<text x="1099.9" y="225" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">appraise</text>
+<polygon points="1270.4,176 1467,176 1483,209 1467,242 1270.4,242 1286.4,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="1296.4" y="205" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Synthesise and</text>
+<text x="1296.4" y="225" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">rate certainty</text>
+<polygon points="1467,176 1657.6,176 1657.6,242 1467,242 1483,209" fill="#E7EEF6" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="1493" y="215" font-size="17" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600" fill="#2D5A88">Report</text>
+<rect x="38" y="268" width="184.6" height="217.7" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="63" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="63" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="83" y="296.5" font-size="15.5" font-weight="600">Set up the</text>
+<text x="83" y="316" font-size="15.5" font-weight="600">project</text>
+<circle cx="56.5" cy="334.4" r="3" fill="#56616E"/><path d="M51.5,343.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="75" y="341" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="51" y="366" font-size="13.2">Write the question and</text>
+<text x="51" y="383.6" font-size="13.2">the eligibility criteria, add</text>
+<text x="51" y="401.2" font-size="13.2">the team, fix the</text>
+<text x="51" y="418.8" font-size="13.2">screening plan and</text>
+<text x="51" y="436.4" font-size="13.2">choose the risk-of-bias</text>
+<text x="51" y="454" font-size="13.2">tool for each study</text>
+<text x="51" y="471.6" font-size="13.2">design.</text>
+<polyline points="63,485.7 63,513.7" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="38" y="515.7" width="184.6" height="152.2" rx="7" fill="#FFFFFF" stroke="#6F7B88" stroke-width="1.4" stroke-dasharray="6 4"/>
+<circle cx="63" cy="539.7" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="63" y="544.3" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="83" y="544.2" font-size="15.5" font-weight="600">Register the</text>
+<text x="83" y="563.7" font-size="15.5" font-weight="600">protocol</text>
+<circle cx="56.5" cy="582.1" r="3" fill="#56616E"/><path d="M51.5,591.2 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="75" y="588.7" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="51" y="613.7" font-size="13.2">In PROSPERO or on OSF,</text>
+<text x="51" y="631.3" font-size="13.2">before the final searches.</text>
+<text x="51" y="654.4" font-size="12.4" font-weight="600" fill="#56616E">Done outside ReviewDesk</text>
+<rect x="234.6" y="268" width="184.6" height="147.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="259.6" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="259.6" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="279.6" y="296.5" font-size="15.5" font-weight="600">Run and log the</text>
+<text x="279.6" y="316" font-size="15.5" font-weight="600">searches</text>
+<circle cx="253.1" cy="334.4" r="3" fill="#56616E"/><path d="M248.1,343.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="271.6" y="341" font-size="12.4" fill="#56616E">Whoever searches</text>
+<text x="247.6" y="366" font-size="13.2">Search every database</text>
+<text x="247.6" y="383.6" font-size="13.2">within a short time, and</text>
+<text x="247.6" y="401.2" font-size="13.2">log each search.</text>
+<polyline points="259.6,415.3 259.6,443.3" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="234.6" y="445.3" width="184.6" height="129.7" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="259.6" cy="469.3" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="259.6" y="473.9" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="279.6" y="473.8" font-size="15.5" font-weight="600">Import the</text>
+<text x="279.6" y="493.3" font-size="15.5" font-weight="600">results</text>
+<circle cx="253.1" cy="511.7" r="3" fill="#56616E"/><path d="M248.1,520.8 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="271.6" y="518.3" font-size="12.4" fill="#56616E">Anyone in the team</text>
+<text x="247.6" y="543.3" font-size="13.2">Add each database&#x27;s</text>
+<text x="247.6" y="560.9" font-size="13.2">export file.</text>
+<polyline points="259.6,575 259.6,603" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="234.6" y="605" width="184.6" height="147.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="259.6" cy="629" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="259.6" y="633.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="279.6" y="633.5" font-size="15.5" font-weight="600">Remove</text>
+<text x="279.6" y="653" font-size="15.5" font-weight="600">duplicates</text>
+<circle cx="253.1" cy="671.4" r="3" fill="#56616E"/><path d="M248.1,680.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="271.6" y="678" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="247.6" y="703" font-size="13.2">Check the possible</text>
+<text x="247.6" y="720.6" font-size="13.2">duplicates ReviewDesk</text>
+<text x="247.6" y="738.2" font-size="13.2">finds.</text>
+<rect x="431.2" y="268" width="440.1" height="111.7" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="456.2" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="456.2" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="476.2" y="297" font-size="15.5" font-weight="600">Calibration round</text>
+<circle cx="449.7" cy="316.4" r="3" fill="#56616E"/><path d="M444.7,325.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="456.7" cy="316.4" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M451.7,325.5 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="468.2" y="323" font-size="12.4" fill="#56616E">Both reviewers, independently</text>
+<text x="444.2" y="348" font-size="13.2">Both screen the same 100 records, then discuss every</text>
+<text x="444.2" y="365.6" font-size="13.2">disagreement.</text>
+<polyline points="456.2,379.7 456.2,407.7" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="431.2" y="409.7" width="214.1" height="242.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="456.2" cy="433.7" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="456.2" y="438.3" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="476.2" y="438.7" font-size="15.5" font-weight="600">Agreement sample</text>
+<circle cx="449.7" cy="458.1" r="3" fill="#56616E"/><path d="M444.7,467.2 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="456.7" cy="458.1" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M451.7,467.2 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="468.2" y="464.7" font-size="12.4" fill="#56616E">Both reviewers,</text>
+<text x="468.2" y="481.2" font-size="12.4" fill="#56616E">independently</text>
+<text x="444.2" y="506.2" font-size="13.2">Both screen a random 20% of</text>
+<text x="444.2" y="523.8" font-size="13.2">the records, without seeing</text>
+<text x="444.2" y="541.4" font-size="13.2">each other&#x27;s votes.</text>
+<rect x="657.2" y="409.7" width="214.1" height="242.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="682.2" cy="433.7" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="682.2" y="438.3" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">8</text>
+<text x="702.2" y="438.2" font-size="15.5" font-weight="600">Run the AI second</text>
+<text x="702.2" y="457.7" font-size="15.5" font-weight="600">screener</text>
+<circle cx="675.7" cy="476.1" r="3" fill="#56616E"/><path d="M670.7,485.2 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="694.2" y="482.7" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="670.2" y="507.7" font-size="13.2">Alongside step 7, two AI</text>
+<text x="670.2" y="525.3" font-size="13.2">models screen every record.</text>
+<text x="670.2" y="542.9" font-size="13.2">Only the project lead sees</text>
+<text x="670.2" y="560.5" font-size="13.2">their answers, once the</text>
+<text x="670.2" y="578.1" font-size="13.2">sample is finished.</text>
+<text x="670.2" y="602.7" font-size="13.2">If they would keep over 50%</text>
+<text x="670.2" y="620.3" font-size="13.2">of the records, both reviewers</text>
+<text x="670.2" y="637.9" font-size="13.2">screen everything.</text>
+<polyline points="456.2,652 456.2,680" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="431.2" y="682" width="440.1" height="138.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="456.2" cy="706" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="456.2" y="710.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">9</text>
+<text x="476.2" y="711" font-size="15.5" font-weight="600">Apply the agreement rule</text>
+<circle cx="449.7" cy="730.4" r="3" fill="#56616E"/><path d="M444.7,739.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="468.2" y="737" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="444.2" y="763.5" font-size="13.2" font-weight="600">Is Cohen&#x27;s kappa on the agreement sample at least 0.80?</text>
+<text x="444.2" y="788.6" font-size="13.2" fill="#56616E">Kappa measures agreement beyond chance: 1 is perfect, 0 is no</text>
+<text x="444.2" y="806.2" font-size="13.2" fill="#56616E">better than chance.</text>
+<polyline points="456.2,820.3 456.2,887.3" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<polyline points="456.2,836.3 672.2,836.3 682.2,846.3 682.2,887.3" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<text x="467.2" y="860.3" font-size="13.5" font-weight="600" fill="#2D5A88">Yes</text>
+<text x="495.4" y="860.3" font-size="13" fill="#2D5A88">kappa 0.80 or more</text>
+<text x="693.2" y="860.3" font-size="13.5" font-weight="600" fill="#2D5A88">No</text>
+<text x="715.8" y="860.3" font-size="13" fill="#2D5A88">kappa below 0.80</text>
+<rect x="431.2" y="891.3" width="214.1" height="164.9" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="456.2" cy="915.3" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="456.2" y="919.9" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="476.2" y="919.8" font-size="15.5" font-weight="600">Screen the</text>
+<text x="476.2" y="939.3" font-size="15.5" font-weight="600">remaining records</text>
+<circle cx="449.7" cy="957.7" r="3" fill="#56616E"/><path d="M444.7,966.8 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="468.2" y="964.3" font-size="12.4" fill="#56616E">Reviewer A, alone</text>
+<text x="444.2" y="989.3" font-size="13.2">With the AI second screener</text>
+<text x="444.2" y="1006.9" font-size="13.2">behind: records Reviewer A</text>
+<text x="444.2" y="1024.5" font-size="13.2">excludes that the AI would</text>
+<text x="444.2" y="1042.1" font-size="13.2">keep go to Reviewer B.</text>
+<rect x="657.2" y="891.3" width="214.1" height="164.9" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="682.2" cy="915.3" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="682.2" y="919.9" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="702.2" y="919.8" font-size="15.5" font-weight="600">Screen the</text>
+<text x="702.2" y="939.3" font-size="15.5" font-weight="600">remaining records</text>
+<circle cx="675.7" cy="957.7" r="3" fill="#56616E"/><path d="M670.7,966.8 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="682.7" cy="957.7" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M677.7,966.8 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="694.2" y="964.3" font-size="12.4" fill="#56616E">Both reviewers,</text>
+<text x="694.2" y="980.8" font-size="12.4" fill="#56616E">independently</text>
+<polyline points="456.2,1056.2 456.2,1080.2" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="682.2,1056.2 682.2,1070.2 466.2,1070.2 456.2,1080.2" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="456.2,1080.2 456.2,1092.2" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="431.2" y="1094.2" width="440.1" height="33.6" rx="7" fill="#E7EEF6" stroke="#E7EEF6" stroke-width="1.25"/>
+<text x="470.2" y="1115.2" font-size="13.2">Either way, the records sent on go to step 11.</text>
+<path d="M450.2,1106 l6,5 l-6,5" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="883.3" y="268" width="184.6" height="111.7" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="908.3" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="908.3" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">11</text>
+<text x="928.3" y="297" font-size="15.5" font-weight="600">Get the full texts</text>
+<circle cx="901.8" cy="316.4" r="3" fill="#56616E"/><path d="M896.8,325.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="920.3" y="323" font-size="12.4" fill="#56616E">Anyone in the team</text>
+<text x="896.3" y="348" font-size="13.2">Find a PDF for every</text>
+<text x="896.3" y="365.6" font-size="13.2">record sent on.</text>
+<polyline points="908.3,379.7 908.3,407.7" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="883.3" y="409.7" width="184.6" height="163.8" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="908.3" cy="433.7" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="908.3" y="438.3" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">12</text>
+<text x="928.3" y="438.2" font-size="15.5" font-weight="600">Assess the full</text>
+<text x="928.3" y="457.7" font-size="15.5" font-weight="600">texts</text>
+<circle cx="901.8" cy="476.1" r="3" fill="#56616E"/><path d="M896.8,485.2 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="908.8" cy="476.1" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M903.8,485.2 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="920.3" y="482.7" font-size="12.4" fill="#56616E">Both reviewers,</text>
+<text x="920.3" y="499.2" font-size="12.4" fill="#56616E">independently</text>
+<text x="896.3" y="524.2" font-size="13.2">Both assess every full</text>
+<text x="896.3" y="541.8" font-size="13.2">text, with a reason for</text>
+<text x="896.3" y="559.4" font-size="13.2">each exclusion.</text>
+<polyline points="908.3,573.5 908.3,601.5" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="883.3" y="603.5" width="184.6" height="184.4" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="908.3" cy="627.5" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="908.3" y="632.1" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">13</text>
+<text x="928.3" y="632" font-size="15.5" font-weight="600">Citation</text>
+<text x="928.3" y="651.5" font-size="15.5" font-weight="600">searching and</text>
+<text x="928.3" y="671" font-size="15.5" font-weight="600">other sources</text>
+<circle cx="901.8" cy="689.4" r="3" fill="#56616E"/><path d="M896.8,698.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="920.3" y="696" font-size="12.4" fill="#56616E">Anyone in the team</text>
+<text x="896.3" y="721" font-size="13.2">Check reference lists and</text>
+<text x="896.3" y="738.6" font-size="13.2">the studies citing</text>
+<text x="896.3" y="756.2" font-size="13.2">included ones; screen</text>
+<text x="896.3" y="773.8" font-size="13.2">what they find.</text>
+<rect x="1079.9" y="268" width="184.6" height="145.8" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="1104.9" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1104.9" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">14</text>
+<text x="1124.9" y="297" font-size="15.5" font-weight="600">Extract data</text>
+<circle cx="1098.4" cy="316.4" r="3" fill="#56616E"/><path d="M1093.4,325.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="1105.4" cy="316.4" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M1100.4,325.5 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="1116.9" y="323" font-size="12.4" fill="#56616E">One extracts, the other</text>
+<text x="1116.9" y="339.5" font-size="12.4" fill="#56616E">checks</text>
+<text x="1092.9" y="364.5" font-size="13.2">Outcome data are</text>
+<text x="1092.9" y="382.1" font-size="13.2">extracted by both,</text>
+<text x="1092.9" y="399.7" font-size="13.2">independently.</text>
+<polyline points="1104.9,413.8 1104.9,441.8" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="1079.9" y="443.8" width="184.6" height="163.8" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="1104.9" cy="467.8" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1104.9" y="472.4" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">15</text>
+<text x="1124.9" y="472.3" font-size="15.5" font-weight="600">Assess risk of</text>
+<text x="1124.9" y="491.8" font-size="15.5" font-weight="600">bias</text>
+<circle cx="1098.4" cy="510.2" r="3" fill="#56616E"/><path d="M1093.4,519.3 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="1105.4" cy="510.2" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M1100.4,519.3 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="1116.9" y="516.8" font-size="12.4" fill="#56616E">Both reviewers,</text>
+<text x="1116.9" y="533.3" font-size="12.4" fill="#56616E">independently</text>
+<text x="1092.9" y="558.3" font-size="13.2">With the tool the plan</text>
+<text x="1092.9" y="575.9" font-size="13.2">gives for each study</text>
+<text x="1092.9" y="593.5" font-size="13.2">design, then agree.</text>
+<polyline points="1104.9,607.6 1104.9,635.6" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="1079.9" y="637.6" width="184.6" height="164.9" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="1104.9" cy="661.6" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1104.9" y="666.2" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">16</text>
+<text x="1124.9" y="666.1" font-size="15.5" font-weight="600">Re-run the</text>
+<text x="1124.9" y="685.6" font-size="15.5" font-weight="600">searches</text>
+<circle cx="1098.4" cy="704" r="3" fill="#56616E"/><path d="M1093.4,713.1 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="1116.9" y="710.6" font-size="12.4" fill="#56616E">Whoever searches</text>
+<text x="1092.9" y="735.6" font-size="13.2">Run them again,</text>
+<text x="1092.9" y="753.2" font-size="13.2">unchanged, before the</text>
+<text x="1092.9" y="770.8" font-size="13.2">analysis; screen the new</text>
+<text x="1092.9" y="788.4" font-size="13.2">records.</text>
+<rect x="1276.4" y="268" width="184.6" height="152.2" rx="7" fill="#FFFFFF" stroke="#6F7B88" stroke-width="1.4" stroke-dasharray="6 4"/>
+<circle cx="1301.4" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1301.4" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">17</text>
+<text x="1321.4" y="296.5" font-size="15.5" font-weight="600">Synthesise the</text>
+<text x="1321.4" y="316" font-size="15.5" font-weight="600">results</text>
+<circle cx="1294.9" cy="334.4" r="3" fill="#56616E"/><path d="M1289.9,343.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="1301.9" cy="334.4" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M1296.9,343.5 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="1313.4" y="341" font-size="12.4" fill="#56616E">The review team</text>
+<text x="1289.4" y="366" font-size="13.2">A meta-analysis, or a</text>
+<text x="1289.4" y="383.6" font-size="13.2">narrative synthesis.</text>
+<text x="1289.4" y="406.7" font-size="12.4" font-weight="600" fill="#56616E">Done outside ReviewDesk</text>
+<polyline points="1301.4,420.2 1301.4,448.2" fill="none" stroke="#2D5A88" stroke-width="2" stroke-linejoin="round" marker-end="url(#tll-ar)"/>
+<rect x="1276.4" y="450.2" width="184.6" height="183.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="1301.4" cy="474.2" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1301.4" y="478.8" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">18</text>
+<text x="1321.4" y="478.7" font-size="15.5" font-weight="600">Rate the</text>
+<text x="1321.4" y="498.2" font-size="15.5" font-weight="600">certainty of the</text>
+<text x="1321.4" y="517.7" font-size="15.5" font-weight="600">evidence</text>
+<circle cx="1294.9" cy="536.1" r="3" fill="#56616E"/><path d="M1289.9,545.2 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<circle cx="1301.9" cy="536.1" r="3" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M1296.9,545.2 a5,5.2 0 0 1 10,0 z" fill="#56616E" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="1313.4" y="542.7" font-size="12.4" fill="#56616E">Both reviewers,</text>
+<text x="1313.4" y="559.2" font-size="12.4" fill="#56616E">independently</text>
+<text x="1289.4" y="584.2" font-size="13.2">With GRADE: how sure</text>
+<text x="1289.4" y="601.8" font-size="13.2">you can be of each main</text>
+<text x="1289.4" y="619.4" font-size="13.2">result.</text>
+<rect x="1473" y="268" width="184.6" height="147.3" rx="7" fill="#FFFFFF" stroke="#C9D1DA" stroke-width="1.25"/>
+<circle cx="1498" cy="292" r="12" fill="#2D5A88" stroke="#2D5A88" stroke-width="1.6"/>
+<text x="1498" y="296.6" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">19</text>
+<text x="1518" y="296.5" font-size="15.5" font-weight="600">Report the</text>
+<text x="1518" y="316" font-size="15.5" font-weight="600">review</text>
+<circle cx="1491.5" cy="334.4" r="3" fill="#56616E"/><path d="M1486.5,343.5 a5,5.2 0 0 1 10,0 z" fill="#56616E"/>
+<text x="1510" y="341" font-size="12.4" fill="#56616E">The project lead</text>
+<text x="1486" y="366" font-size="13.2">The PRISMA 2020 flow</text>
+<text x="1486" y="383.6" font-size="13.2">diagram, the tables and</text>
+<text x="1486" y="401.2" font-size="13.2">the methods summary.</text>
+<rect x="1276.4" y="673.5" width="381.2" height="394.5" rx="7" fill="#F6F7F9" stroke="#F6F7F9" stroke-width="1.25"/>
+<text x="1289.4" y="701.5" font-size="16" font-family="Serif4, 'Source Serif 4', Georgia, 'Times New Roman', serif" font-weight="600">Words used here</text>
+<text x="1289.4" y="729.5" font-size="13" font-weight="600">Calibration round</text>
+<text x="1289.4" y="746.5" font-size="12.6" fill="#56616E">A practice round on the same records, so that both reviewers</text>
+<text x="1289.4" y="763" font-size="12.6" fill="#56616E">apply the criteria in the same way.</text>
+<text x="1289.4" y="789.5" font-size="13" font-weight="600">Agreement sample</text>
+<text x="1289.4" y="806.5" font-size="12.6" fill="#56616E">A random share of the records that both reviewers screen, to</text>
+<text x="1289.4" y="823" font-size="12.6" fill="#56616E">measure how well they agree.</text>
+<text x="1289.4" y="849.5" font-size="13" font-weight="600">AI second screener</text>
+<text x="1289.4" y="866.5" font-size="12.6" fill="#56616E">AI models that can send a record back for a second look, but</text>
+<text x="1289.4" y="883" font-size="12.6" fill="#56616E">never exclude one.</text>
+<text x="1289.4" y="909.5" font-size="13" font-weight="600">Risk of bias</text>
+<text x="1289.4" y="926.5" font-size="12.6" fill="#56616E">How far a study&#x27;s design or conduct could have skewed its</text>
+<text x="1289.4" y="943" font-size="12.6" fill="#56616E">results.</text>
+<text x="1289.4" y="969.5" font-size="13" font-weight="600">GRADE</text>
+<text x="1289.4" y="986.5" font-size="12.6" fill="#56616E">A standard way to rate how sure you can be of each result.</text>
+<text x="1289.4" y="1013" font-size="13" font-weight="600">PRISMA 2020</text>
+<text x="1289.4" y="1030" font-size="12.6" fill="#56616E">The reporting guideline for systematic reviews, with its flow</text>
+<text x="1289.4" y="1046.5" font-size="12.6" fill="#56616E">diagram of the records at each stage.</text>
+<text x="38" y="1180.8" font-size="12.4" fill="#5E6A77">ReviewDesk: free software for the record-handling stages of a systematic review.</text>
+<text x="1642" y="1180.8" font-size="12.4" fill="#5E6A77" text-anchor="end">Follow the numbers: each step builds on the ones before it.</text>
+</svg>

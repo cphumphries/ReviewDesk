@@ -1,0 +1,47 @@
+ReviewDesk 1.3.1
+================
+
+ReviewDesk helps a review team run the screening stages of a systematic review: plan and log the searches,
+import the database exports (RIS and other formats), remove duplicates, screen titles and abstracts (with
+calibration, an agreement sample and Cohen's kappa), review full texts, extract data, assess risk of bias,
+rate the certainty of the evidence with GRADE, and produce the PRISMA 2020 flow diagram and a reporting pack
+with the tables, methods text and appendix files. An optional AI second screener can stand behind
+single-reviewer screening; it never excludes a record.
+
+To start it
+  Windows:  double-click "Start ReviewDesk.bat". A black window opens (keep it open) and ReviewDesk opens
+            in your web browser. Close the black window to stop ReviewDesk. Nothing needs installing.
+  Mac:      install Python 3.9 or later from https://www.python.org/downloads/macos/, then in Applications
+            open the Python folder and double-click "Install Certificates.command" once. Then double-click
+            "Start ReviewDesk (Mac).command". If the Mac will not open it, see the user guide. If the Mac
+            asks whether Terminal may reach your Documents, Downloads or Desktop folder, or OneDrive, choose
+            Allow: without it ReviewDesk cannot open a project there.
+  Linux:    sh start-reviewdesk.sh (needs Python 3.9 or later).
+
+Read "ReviewDesk user guide" before you start (it is here as a PDF and as a Word document). If you are
+setting up a review for the first time, follow "ReviewDesk set-up walk-through" (PDF or Word): it takes
+the project lead through the set-up step by step, and ends with a checklist. ReviewDesk also has the same
+guided set-up built in.
+
+Upgrading from an earlier version
+  Extract this version to a new folder (not over the old one), and close the old ReviewDesk window first.
+  Your settings, your AI key and your projects are kept. Everyone in a team moves to the new version on the
+  same day, and nobody goes back to the old one: an older version cannot read some things the new one
+  records, such as an "Ongoing study" decision or the newer risk-of-bias tools, and shows "Something went
+  wrong". On the day, everyone closes ReviewDesk and lets OneDrive finish; the project lead upgrades and
+  opens the project first, then everyone else. ReviewDesk warns when someone in the team last used an
+  older version. From version 1.3, an older ReviewDesk also refuses to open a project that needs a newer
+  one, or stops saving in it, and says which version to download (the move from 1.3.0 to 1.3.1 is one of
+  these). After upgrading a project begun with an earlier version, the project lead records the
+  risk-of-bias plan when ReviewDesk asks. Then delete the old ReviewDesk folder.
+
+Keep this ReviewDesk folder and your review project in different folders: the project folder is created
+from inside ReviewDesk, in a folder the whole team can reach. The best place is a Microsoft Team or
+SharePoint site with two owners, because a folder in one person's OneDrive is deleted when they leave.
+
+ReviewDesk runs on your own computer. It sends something elsewhere only when you use these:
+  - the AI second screener: the review question, the eligibility criteria and each record's title, abstract,
+    year, journal and publication type go to the AI service the project lead sets up;
+  - the open-access full-text finder: each report's DOI, PubMed ID or title goes to Unpaywall, Europe PMC,
+    OpenAlex and Semantic Scholar (your email address to Unpaywall and OpenAlex), and PDFs are downloaded
+    from the addresses they give.

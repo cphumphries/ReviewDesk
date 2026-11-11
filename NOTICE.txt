@@ -1,0 +1,57 @@
+ReviewDesk
+Copyright (c) 2026 Chris Humphries.
+Released under the MIT License; see LICENSE (LICENSE.txt in the download).
+
+ReviewDesk includes the following third-party software and fonts, each under its own licence:
+
+  Python 3.14.10, Windows embeddable package (folder "python", in the Windows download only)
+    Python Software Foundation License; see python/LICENSE.txt. Downloaded from python.org when the release is
+    built, and checked against this SHA-256 of python-3.14.10-embed-amd64.zip, as python.org's release page gives it:
+    90905e64a840557d8c1bc4f5b74db3d7ee85e3ffb217611cac1c7813acea4159
+    Every file is as python.org gives it, except python/python314._pth, which is ReviewDesk's own: it replaces
+    python.org's so that this Python also finds ReviewDesk's "app" folder.
+    The package contains software from others, each under its own licence: OpenSSL (Apache License 2.0), libffi,
+    bzip2, SQLite (public domain), zlib, Expat, mpdecimal, XZ Utils (liblzma), Zstandard, libtommath, and
+    Microsoft's Visual C++ runtime (vcruntime140.dll and vcruntime140_1.dll, under Microsoft's terms for
+    distributable code). Their licences and notices are in python/LICENSE.txt and at
+    https://docs.python.org/3.14/license.html.
+
+  IBM Plex Sans 3.201 (interface text)
+    SIL Open Font License 1.1; see app/reviewdesk/static/fonts/OFL-IBMPlexSans.txt. Copyright 2019 IBM Corp.
+    The files are the Latin subsets in Fontsource's @fontsource/ibm-plex-sans package (https://fontsource.org),
+    unchanged by ReviewDesk; the font itself is IBM's (https://github.com/IBM/plex).
+
+  Source Serif 4, version 4.004 (reading text)
+    SIL Open Font License 1.1; see app/reviewdesk/static/fonts/OFL-SourceSerif4.txt. Copyright 2014-2023 Adobe,
+    with Reserved Font Name 'Source'. The files are the Latin subsets in Fontsource's @fontsource/source-serif-4
+    package (https://fontsource.org), unchanged by ReviewDesk; the font itself is Adobe's
+    (https://github.com/adobe-fonts/source-serif).
+
+ReviewDesk also uses published reporting guidance and methods, each credited in the files ReviewDesk writes:
+
+  PRISMA 2020 checklist and flow diagram
+    Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting
+    systematic reviews. BMJ 2021;372:n71. doi:10.1136/bmj.n71. Licensed under the Creative Commons Attribution 4.0
+    International licence (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). The PRISMA 2020 checklist that
+    ReviewDesk writes quotes the 27 checklist items word for word and adds columns of its own; the flow diagram is
+    adapted from the PRISMA 2020 flow diagram template (ReviewDesk draws it with its own layout and fills in the counts).
+
+  PRESS 2015 (Peer Review of Electronic Search Strategies)
+    McGowan J, Sampson M, Salzwedel DM, Cogo E, Foerster V, Lefebvre C. PRESS Peer Review of Electronic Search
+    Strategies: 2015 guideline statement. J Clin Epidemiol 2016;75:40-6. The search worksheet's six prompts are
+    ReviewDesk's own words, covering the areas of PRESS 2015; they are not the PRESS checklist, which is published
+    under its own licence (CC BY-NC-ND 4.0) and is what a librarian uses for a formal peer review.
+
+  GRADE
+    The meaning of each level of certainty follows Balshem H, Helfand M, Schünemann HJ, et al. GRADE guidelines: 3.
+    Rating the quality of evidence. J Clin Epidemiol 2011;64:401-6; for results that were not pooled, Murad MH,
+    Mustafa RA, Schünemann HJ, Sultan S, Santesso N. Rating the certainty in evidence in the absence of a single
+    estimate of effect. Evid Based Med 2017;22:85-7. The suggested plain-language statements follow Santesso N,
+    Glenton C, Dahm P, et al. GRADE guidelines 26: informative statements to communicate the findings of systematic
+    reviews of interventions. J Clin Epidemiol 2020;119:126-35.
+
+  Risk-of-bias tools (RoB 2, ROBINS-I, ROBINS-E, QUADAS-2, PROBAST+AI, QUIPS)
+    ReviewDesk uses only each tool's name, the names of its domains, its judgement words and its citation, and
+    states each tool's rule for the overall judgement in its own words. It reproduces none of the tools' signalling
+    questions or guidance: use the official tool, linked from ReviewDesk, for those. RoB 2, ROBINS-I and ROBINS-E
+    are published by their authors under CC BY-NC-ND 4.0 (riskofbias.info).

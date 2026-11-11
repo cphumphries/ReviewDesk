@@ -1,0 +1,38 @@
+# Static analysis of the Python: likely mistakes and security rules (CONTRIBUTING.md says how to run it).
+# ReviewDesk itself needs nothing installed; this is for people who change it:   pip install ruff   then   ruff check
+# Every push is checked the same way on GitHub (.github/workflows/analysis.yml).
+target-version = "py39"
+line-length = 118
+extend-exclude = ["dist"]
+
+[lint]
+select = [
+    "F",    # pyflakes: names that do not exist, imports and variables never used
+    "E9",   # the file cannot be read as Python
+    "PLE",  # outright errors
+    "B",    # bugbear: likely mistakes
+    "S",    # bandit's security rules
+]
+ignore = [
+    # A message written for the person at the screen replaces the technical error on purpose (the technical one is
+    # logged where it is caught), so `raise ... from err` would add nothing a reader sees.
+    "B904",
+    # Rows are unpacked into names for the reader, also when a loop uses only some of them.
+    "B007",
+    # A small helper written inside a loop here is always used within that same turn of the loop, never kept for later.
+    "B023",
+    # `random` is used to draw and shuffle samples from a recorded seed (so that a draw can be repeated) and to space
+    # out retries: never for a secret. The session token and each computer's signing secret come from `secrets`.
+    "S311",
+]
+
+[lint.per-file-ignores]
+# PASS_A and PASS_B are the AI's two screening passes (their prompts), not passwords.
+"app/reviewdesk/ai.py" = ["S105"]
+# The tools are run by a developer on their own computer, on ReviewDesk's own files: they start fixed programs by name
+# (git, LibreOffice, pdftotext), fetch one fixed address (python.org, checked against a SHA-256) or this computer, and
+# read back documents ReviewDesk itself has just written.
+"tools/*" = ["S603", "S607", "S310", "S314"]
+# The tests assert, start stand-in servers and programs, and read back what ReviewDesk wrote; they are checked for
+# outright mistakes only.
+"tests/*" = ["S", "B"]
