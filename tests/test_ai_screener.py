@@ -328,7 +328,9 @@ def test_service_problems_are_put_in_plain_words_and_the_detail_goes_to_the_erro
     e = c.error("POST", "/api/ai/models", {})
     assert e.message == (f"ReviewDesk could not reach the AI service at {c.elm.url}. Check the address under My settings, "
                          "and your internet connection (or VPN).")
-    assert "Connection refused" in open(log, encoding="utf-8").read()            # the detail is kept, off the screen
+    last = json.loads(open(log, encoding="utf-8").read().splitlines()[-1])       # the detail is kept, off the screen, in the
+    assert c.elm.url in last["error"] and "urlopen error" in last["error"]       # system's own words ("Connection refused"
+    assert "refused" in last["error"] or "10061" in last["error"]                # on Linux and a Mac, error 10061 on Windows)
 
 
 def test_a_failed_test_call_counts_and_each_run_logs_what_it_sent(lead):

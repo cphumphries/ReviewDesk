@@ -285,13 +285,28 @@ def test_the_pdf_finder_never_reaches_this_computer_or_the_local_network(url, mo
     assert fulltext.fetch_pdf(url) == b""
 
 
-@pytest.mark.parametrize("url", ["http://2130706433/x.pdf", "http://0177.0.0.1/x.pdf", "http://127.1/x.pdf",
+@pytest.mark.parametrize("url", ["http://2130706433/x.pdf", "http://127.1/x.pdf",
                                  "http://0x7f.0.0.1/x.pdf", "http://[::ffff:127.0.0.1]/x.pdf", "http://[fe80::1]/x.pdf",
                                  "http://[fc00::1]/x.pdf", "http://100.64.0.1/x.pdf", "http://127.0.0.1.:8080/x.pdf",
                                  "http://user@127.0.0.1/x.pdf", "http://no-such-host.invalid/x.pdf"])
 def test_other_ways_of_writing_a_local_address_are_refused(url, monkeypatch):
     monkeypatch.delenv("REVIEWDESK_OA_BASE", raising=False)
     assert fulltext.public_address(url) is False
+
+
+def test_an_address_that_systems_read_differently_is_judged_by_what_this_system_makes_of_it(monkeypatch):
+    """0177.0.0.1 is this computer (127.0.0.1) where a number that starts with 0 is read as octal, as Linux reads it; the
+    public address 177.0.0.1 where it is read as decimal, as a Mac reads it; and no address at all on Windows. ReviewDesk
+    asks the system that will make the connection (and checks again the address the connection reached): so the
+    address is fetched only where it is a public one, and never where it leads back to this computer."""
+    import socket
+    monkeypatch.delenv("REVIEWDESK_OA_BASE", raising=False)
+    try:
+        reached = {i[4][0] for i in socket.getaddrinfo("0177.0.0.1", None)}
+    except OSError:
+        reached = set()
+    assert reached in (set(), {"127.0.0.1"}, {"177.0.0.1"})
+    assert fulltext.public_address("http://0177.0.0.1/x.pdf") is (reached == {"177.0.0.1"})
 
 
 def test_a_public_address_is_allowed(monkeypatch):

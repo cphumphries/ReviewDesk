@@ -70,6 +70,11 @@ Fixed:
   reads what was sent and throws it away before the connection ends (all of it from one of its own pages; at most
   a megabyte, for two seconds, from anything else). Nothing that was saved was ever affected. 1.3.0 behaved the
   same way.
+- On a Mac, ReviewDesk could sit for half a minute after it was started before it said it was running and opened the
+  browser. Python's web server asks the system for the computer's full name as it starts, and on some networks a
+  Mac leaves that question unanswered for that long (35 seconds on GitHub's macOS 26 computers, the first time the
+  tests ran there; a third of a second without the question). ReviewDesk never used the name, and no longer asks.
+  1.3.0 behaved the same way.
 - A row whose fingerprint was not text at all (a number or a list in its place: damage that no version of ReviewDesk
   causes, but another program could) stopped the data checks, and with a list or an object in its place the project
   no longer opened ("Something went wrong inside ReviewDesk"). Such a row is now listed under Data problems like
@@ -102,6 +107,11 @@ For developers:
   written again. `versions.NEEDS` is 1.3.1, and the lead's first opening of a project with a version that needs
   more than the project file says now writes it there (it used to wait for the lead's next save). The notes at the
   top of `integrity.py` say what the old lengths still allow in a project begun with an earlier version.
+- The tests ran on GitHub's own Windows and Mac computers for the first time before this release. Besides the
+  half-minute on a Mac (above), three tests turned out to expect what Linux does: the words Windows uses for a
+  refused connection, the way a Mac reads the address 0177.0.0.1 (as the public address 177.0.0.1, where Linux
+  reads this computer's own and Windows reads none: ReviewDesk asks the system and is right on each), and five test
+  names so long that Windows with Python 3.9 could not keep them in an environment variable.
 - Python 3.15 is tested. It is the Python that python.org now offers first, so it is what a new Mac user installs:
   the tests on GitHub run on 3.9, 3.14 and 3.15, and the Linux start file also looks for `python3.15` by name.
 - docs/dev/DESIGN.md lists the options ReviewDesk can be started with and the environment variables it reads.

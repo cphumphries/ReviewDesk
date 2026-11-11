@@ -1592,9 +1592,14 @@ class Server(ThreadingHTTPServer):
 
     def server_bind(self):
         import socket
+        import socketserver
         if sys.platform.startswith("win") and hasattr(socket, "SO_EXCLUSIVEADDRUSE"):
             self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
-        super().server_bind()
+        # Not Python's HTTPServer.server_bind: besides binding, that asks the system for this computer's full name
+        # (socket.getfqdn), which nothing here uses. On a Mac whose network leaves that question unanswered, ReviewDesk
+        # then sat for half a minute before it said it was running (35 seconds on GitHub's macOS 26 computers).
+        socketserver.TCPServer.server_bind(self)
+        self.server_name, self.server_port = self.server_address[:2]
 
     def handle_error(self, request, client_address):
         if isinstance(sys.exc_info()[1], GONE):

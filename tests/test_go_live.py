@@ -82,7 +82,8 @@ def test_removing_duplicates_again_never_takes_a_screened_record_out_of_the_revi
     assert apart in {r["id"] for r in p.records()}
 
 
-@pytest.mark.parametrize("note", ["Wrong population (children only)", "a b", "a\u0085b", "x" * 70000, "plain"])
+@pytest.mark.parametrize("note", ["Wrong population (children only)", "a b", "a\u0085b",
+                                  pytest.param("x" * 70000, id="70,000 letters"), "plain"])
 def test_a_row_ends_only_at_a_line_feed(tmp_path, monkeypatch, note):
     """Text pasted into a note can hold U+2028, U+2029 or U+0085, which some tools treat as line ends; the row after
     such a note was once chained to the wrong row, and the file reported for ever as changed outside ReviewDesk. The
@@ -204,12 +205,15 @@ def test_only_a_request_addressed_to_this_computer_and_nothing_else_is_answered(
     assert r.status in (400, 403)
 
 
-@pytest.mark.parametrize("name, raw", [
-    ("ten thousand unfinished text objects", b"%PDF-1.4\n" + b"BT " * 10000),
-    ("a string that never ends", b"%PDF-1.4\nBT " + b"(" * 300000 + b" ET"),
-    ("dictionaries that never end", b"%PDF-1.4\nBT " + b"<< " * 200000 + b" ET"),
+SLOW_PDFS = [                 # (named, so that a test's name is not the megabyte itself: pytest keeps the name of the
+    ("ten thousand unfinished text objects", b"%PDF-1.4\n" + b"BT " * 10000),     # test it is running in an environment
+    ("a string that never ends", b"%PDF-1.4\nBT " + b"(" * 300000 + b" ET"),      # variable, and Windows refuses one
+    ("dictionaries that never end", b"%PDF-1.4\nBT " + b"<< " * 200000 + b" ET"), # longer than 32,767 characters)
     ("titles that never end", b"%PDF-1.4\n" + b"<dc:title>" * 100000),
-    ("page trees without end", b"%PDF-1.4\n" + b"/Type /Pages " * 100000)])
+    ("page trees without end", b"%PDF-1.4\n" + b"/Type /Pages " * 100000)]
+
+
+@pytest.mark.parametrize("name, raw", SLOW_PDFS, ids=[name for name, _ in SLOW_PDFS])
 def test_a_pdf_made_to_be_slow_is_read_in_seconds(name, raw):
     """Each of these once took time that grew with the square of the file's size (8 seconds for 30 KB, minutes for a
     megabyte), and the whole of ReviewDesk waited while one was read."""

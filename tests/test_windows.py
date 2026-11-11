@@ -604,6 +604,21 @@ def test_the_recent_list_holds_a_folder_once_however_its_name_was_typed(tmp_path
     assert [r["path"] for r in userconfig.load()["recent"] if r["path"].lower() == a.lower()] == [a]
 
 
+def test_starting_never_asks_the_system_for_this_computers_full_name(monkeypatch):
+    """Python's own web server asks for it as it starts (socket.getfqdn), and nothing in ReviewDesk uses it. On a Mac
+    whose network leaves the question unanswered, ReviewDesk sat for half a minute before it said it was running."""
+    import socket
+    from reviewdesk import server
+    asked = []
+    monkeypatch.setattr(socket, "getfqdn", lambda *a: asked.append(a) or "this-computer.example")
+    httpd = server.Server(("127.0.0.1", 0), server.Handler)
+    try:
+        assert asked == []
+        assert (httpd.server_name, httpd.server_port) == ("127.0.0.1", httpd.server_address[1]) and httpd.server_port > 0
+    finally:
+        httpd.server_close()
+
+
 def test_the_console_says_when_the_usual_port_is_taken(tmp_path):
     import socket
     s = socket.socket()
