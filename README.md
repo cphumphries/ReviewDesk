@@ -150,8 +150,12 @@ If you use ReviewDesk, please cite it. GitHub's **Cite this repository** button 
 
 ## Status and support
 
-ReviewDesk is written and looked after by one person, Chris Humphries, in his own time. Version 1.3 is the first
-public release. Check what it produces as you would with any tool, and keep your own backup of the project folder.
+ReviewDesk is designed, directed and looked after by one person, Chris Humphries, in his own time. Its code is
+written with Claude, an AI model made by Anthropic, working to his direction. Before a release it must pass the
+automated tests on Windows, Mac and Linux, and changes to how a review's data is kept are reviewed by separate
+instances of Claude that did not write them ([CONTRIBUTING.md](CONTRIBUTING.md) describes both). Version 1.3 is the
+first public release. Check what it produces as you would with any tool, and keep your own backup of the project
+folder.
 
 - A question or a problem: open an issue (see [CONTRIBUTING.md](CONTRIBUTING.md)). Please never attach a real
   review's records, decisions or project folder.

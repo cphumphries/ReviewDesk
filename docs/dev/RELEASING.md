@@ -17,7 +17,9 @@ start files are executable, so step 2 has one more command there.
 4. The Python in the Windows download is the newest release of its series on python.org: `PY_VERSION` and
    `PY_SHA256` in `tools/build_release.py`, and the same two in `NOTICE.txt` (a test fails if they differ).
 5. `.bestpractices.json` still says what is true (see "The OpenSSF Best Practices badge" below).
-6. A version number names one build. Once the files of a version have been given to anyone (a release, a teammate,
+6. Anything that changes how records, decisions or the data checks are kept has had the review that
+   CONTRIBUTING.md describes, and its last look found nothing serious.
+7. A version number names one build. Once the files of a version have been given to anyone (a release, a teammate,
    a tester), a change to them is a new version with a new number: two builds with one number cannot tell each other
    apart in a shared project, and nothing stops a team from mixing them.
 

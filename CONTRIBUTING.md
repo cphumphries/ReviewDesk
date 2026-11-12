@@ -38,6 +38,20 @@ you would like to change, so that nobody writes something that cannot be taken.
 The maintainer reads every pull request and merges it, asks for changes, or says why not. There is no promised
 reply time.
 
+## How the code is written, and reviewed before a release
+
+ReviewDesk's code is written with Claude, an AI model made by Anthropic, to the maintainer's design and direction.
+A commit written that way says so in a `Co-Authored-By` line.
+
+Before a release, a change to how records, decisions or the data checks are kept is also reviewed by separate
+instances of Claude that did not write it and did not see it being written. Each is given the change, a copy of the
+last release to compare it with, and one instruction: try to break it, and say what you checked and what you did
+not. What they find is fixed, with a test where the fault was in the program, and they look again, until a look
+finds nothing serious. What was fixed that way is in [CHANGELOG.md](CHANGELOG.md) with everything else.
+
+This is a second and third pair of eyes, not an audit by people. The tests and the static analysis below are what
+every change must pass, whoever or whatever wrote it.
+
 ## Running the tests
 
 The tests need pytest. From the top folder of the repository, on a Mac or Linux:

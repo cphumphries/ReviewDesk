@@ -1,6 +1,6 @@
 # Changes
 
-## 1.3.1 (11 November 2026)
+## 1.3.1 (12 November 2026)
 
 For teams who want to measure how well and how fast a review was screened, and the data checks now keep every
 fingerprint whole. The two new features are off unless the project lead switches them on: a review that uses neither
@@ -112,6 +112,8 @@ For developers:
   refused connection, the way a Mac reads the address 0177.0.0.1 (as the public address 177.0.0.1, where Linux
   reads this computer's own and Windows reads none: ReviewDesk asks the system and is right on each), and five test
   names so long that Windows with Python 3.9 could not keep them in an environment variable.
+- README.md and CONTRIBUTING.md say how ReviewDesk is written (with Claude, an AI model, to the maintainer's
+  direction) and how a change to the way a review's data is kept is reviewed before a release.
 - Python 3.15 is tested. It is the Python that python.org now offers first, so it is what a new Mac user installs:
   the tests on GitHub run on 3.9, 3.14 and 3.15, and the Linux start file also looks for `python3.15` by name.
 - docs/dev/DESIGN.md lists the options ReviewDesk can be started with and the environment variables it reads.
@@ -271,9 +273,10 @@ Fixed:
 
 ### Found and fixed in the final audit before publication
 
-Version 1.3.0 was checked from the ground up before it was published: seven independent audits (security, the code
-that keeps the data, the review logic, the shared folder, upgrading, a first installation, and the pages in the
-browser) and a check of the statistics and of every built-in tool against its published source. These are the changes
+Version 1.3.0 was checked from the ground up before it was published: seven independent audits by separate
+instances of Claude, the AI model its code is written with (security, the code that keeps the data, the review
+logic, the shared folder, upgrading, a first installation, and the pages in the browser), and a check of the
+statistics and of every built-in tool against its published source. These are the changes
 that came out of it. Anyone who used the test build of 4 November 2026 should move to this one.
 
 Working alone:
