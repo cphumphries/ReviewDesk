@@ -1,5 +1,7 @@
 # ReviewDesk
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/17036/badge)](https://www.bestpractices.dev/projects/17036)
+
 ReviewDesk is free software for running the record-handling stages of a systematic review as a team: logging the
 searches, importing database exports, removing duplicates, screening titles and abstracts, reviewing full texts,
 extracting data, assessing risk of bias, rating the certainty of the evidence with GRADE, and producing the PRISMA 2020

@@ -113,49 +113,57 @@ for both zips. Unzip each once and start it.
 ## 4. Make the GitHub Release
 
 1. **Releases > Draft a new release.** Tag: `v1.3.1` (create it on `main`). Title: `ReviewDesk 1.3.1`.
-2. Attach the three files from `dist/`: both zips and `SHA256SUMS.txt`.
-3. Paste the release notes below, with the two checksums from `SHA256SUMS.txt` and the build line from step 3.
-4. Publish. Then download both zips from the release page and check them with the commands in the notes.
+2. Attach the three files from `dist/`: both zips and `SHA256SUMS.txt` (drag them into the box under the notes, and
+   wait for each bar to finish). GitHub saves a draft as files are attached; nothing is public, and no tag is made,
+   until step 4.
+3. Paste the release notes below, with the two checksums from `SHA256SUMS.txt` and the build line from step 3, and
+   look at them once under **Preview**.
+4. Publish. Then download both zips from the release page and check them with the commands in the notes. (The
+   release page also shows the SHA-256 that GitHub worked out for each file, beside its name: the same letters and
+   numbers.)
 5. Check that the README's **Releases** link, its "release notes" link and **Cite this repository** all work.
 
 ## The release notes
 
-```
+GitHub shows the notes as Markdown, so the headings, the code boxes and the links below are part of them. Each
+paragraph is one long line, so that the page wraps it to its own width. The links name the release's tag, so that
+they go on showing the documents as they were in that release.
+
+````
 ReviewDesk 1.3.1 is the first public release.
 
-Download
-- Windows: ReviewDesk-1.3.1-windows.zip (Python 3.14 included). Right-click it, choose Extract All, then Extract;
-  open the ReviewDesk-1.3.1 folder inside the folder it makes, and double-click Start ReviewDesk.bat.
-- Mac and Linux: ReviewDesk-1.3.1.zip (needs Python 3.9 or later). The README says how to start it.
+## Download
+
+- **Windows:** `ReviewDesk-1.3.1-windows.zip` (Python 3.14 included). Right-click it, choose Extract All, then Extract; open the ReviewDesk-1.3.1 folder inside the folder it makes, and double-click `Start ReviewDesk.bat`.
+- **Mac and Linux:** `ReviewDesk-1.3.1.zip` (needs Python 3.9 or later). The [README](https://github.com/cphumphries/ReviewDesk/blob/v1.3.1/README.md) says how to start it.
+
 "Source code" below is for developers: it has no Python of its own.
 
-Upgrading from an earlier version: extract to a new folder. Everyone in the team upgrades on the same day: close
-ReviewDesk on every computer first, and the project lead upgrades and opens the project first. A project that has
-been opened with 1.3.1 needs 1.3.1 (ReviewDesk 1.3.0 refuses to open it, or stops saving in it), and no earlier
-version should be used on it again. See UPGRADING.md.
+**Upgrading from an earlier version:** extract to a new folder. Everyone in the team upgrades on the same day: close ReviewDesk on every computer first, and the project lead upgrades and opens the project first. A project that has been opened with 1.3.1 needs 1.3.1 (ReviewDesk 1.3.0 refuses to open it, or stops saving in it), and no earlier version should be used on it again. See [UPGRADING.md](https://github.com/cphumphries/ReviewDesk/blob/v1.3.1/UPGRADING.md).
 
-Checking your download (optional)
+## Checking your download (optional)
+
 SHA-256:
-  <checksum>  ReviewDesk-1.3.1-windows.zip
-  <checksum>  ReviewDesk-1.3.1.zip
-Windows (PowerShell, in the Downloads folder):  Get-FileHash ReviewDesk-1.3.1-windows.zip
-Mac (Terminal, in the Downloads folder):        shasum -a 256 ReviewDesk-1.3.1.zip
-Linux (with SHA256SUMS.txt beside the zips):     sha256sum -c --ignore-missing SHA256SUMS.txt
-The letters and numbers shown should be exactly those above (PowerShell shows them in capitals).
-<the build line: "Built with Python ..., zlib ..., on ...">, by tools/build_release.py.
 
-What it does
-ReviewDesk runs the record-handling stages of a systematic review for a small team on their own computers, with the
-review in a shared folder: logging the searches, importing and removing duplicates, screening titles and abstracts
-(with an optional AI second screener that never excludes a record), reviewing full texts, extracting data, assessing
-risk of bias, rating certainty with GRADE, and producing the PRISMA 2020 flow diagram and the reporting files.
-README.md says more, and CHANGELOG.md has the history.
-
-For a study of the screening itself (all off unless the project lead switches them on): a verification sample, in
-which a second person screens, without sight of any earlier decision, a random sample of the records that left the
-review on one reviewer's vote; time recording for screening votes; and the evaluation data, one zip with a row for
-every record, vote and sampled record.
 ```
+<checksum>  ReviewDesk-1.3.1-windows.zip
+<checksum>  ReviewDesk-1.3.1.zip
+```
+
+- Windows (PowerShell, in the Downloads folder): `Get-FileHash ReviewDesk-1.3.1-windows.zip`
+- Mac (Terminal, in the Downloads folder): `shasum -a 256 ReviewDesk-1.3.1.zip`
+- Linux (with `SHA256SUMS.txt` beside the zips): `sha256sum -c --ignore-missing SHA256SUMS.txt`
+
+The letters and numbers shown should be exactly those above (PowerShell shows them in capitals).
+
+<the build line: "Built with Python ..., zlib ..., on ...">, by `tools/build_release.py`.
+
+## What it does
+
+ReviewDesk runs the record-handling stages of a systematic review for a small team on their own computers, with the review in a shared folder: logging the searches, importing and removing duplicates, screening titles and abstracts (with an optional AI second screener that never excludes a record), reviewing full texts, extracting data, assessing risk of bias, rating certainty with GRADE, and producing the PRISMA 2020 flow diagram and the reporting files. [README.md](https://github.com/cphumphries/ReviewDesk/blob/v1.3.1/README.md) says more, and [CHANGELOG.md](https://github.com/cphumphries/ReviewDesk/blob/v1.3.1/CHANGELOG.md) has the history.
+
+For a study of the screening itself (all off unless the project lead switches them on): a verification sample, in which a second person screens, without sight of any earlier decision, a random sample of the records that left the review on one reviewer's vote; time recording for screening votes; and the evaluation data, one zip with a row for every record, vote and sampled record.
+````
 
 The two `<checksum>` lines and the build line cannot be written here: they come from the build in step 3.
 
@@ -169,10 +177,13 @@ file and proposes those answers, so that the form does not have to be filled in 
 The first time, once 1.3.1 is public and released (sections 2 to 4):
 
 1. At <https://www.bestpractices.dev/> choose **Get Your Badge Now!**, sign in with GitHub, and pick
-   `cphumphries/ReviewDesk`. The site gives the project a number and opens the form for "passing", with the answers
-   from `.bestpractices.json` proposed (marked with a robot).
+   `cphumphries/ReviewDesk`. Asked which badge series to start with, choose **Metal (passing, silver, gold)**: the
+   answers in `.bestpractices.json` are to its criteria, and the Baseline series is another list. The site gives the
+   project a number and opens the form for "passing", with the answers from `.bestpractices.json` proposed (marked
+   with a robot).
 2. Add the badge to the top of README.md, under the title, with the project's number in place of `NUMBER`, and
-   commit and push it. Until the badge is earned it shows how far the form has got.
+   commit and push it. Until the badge is earned it shows how far the form has got. (ReviewDesk's number is 17036:
+   its entry was made, and the badge first earned, on 23 November 2026, the day 1.3.1 was released.)
 
    ```
    [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/NUMBER/badge)](https://www.bestpractices.dev/projects/NUMBER)
