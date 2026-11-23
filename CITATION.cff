@@ -6,7 +6,7 @@ authors:
   - family-names: Humphries
     given-names: Chris
 version: "1.3.1"
-date-released: "2026-11-12"
+date-released: "2026-11-23"
 license: MIT
 repository-code: "https://github.com/cphumphries/ReviewDesk"
 url: "https://github.com/cphumphries/ReviewDesk"

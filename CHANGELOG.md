@@ -1,6 +1,6 @@
 # Changes
 
-## 1.3.1 (12 November 2026)
+## 1.3.1 (23 November 2026)
 
 For teams who want to measure how well and how fast a review was screened, and the data checks now keep every
 fingerprint whole. The two new features are off unless the project lead switches them on: a review that uses neither
