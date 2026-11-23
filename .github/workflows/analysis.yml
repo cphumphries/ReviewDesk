@@ -28,6 +28,8 @@ concurrency:
 jobs:
   lint:
     name: Ruff (Python) and ESLint (JavaScript)
+    # The Monday run is there for CodeQL, which runs in a public repository only: in a private one it does nothing.
+    if: ${{ github.event_name != 'schedule' || toJSON(github.event.repository.private) == 'false' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

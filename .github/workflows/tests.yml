@@ -17,7 +17,8 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "17 3 * * 1"          # every Monday: the full suite, the 3,000-record runs included
+    - cron: "17 3 * * 1"          # every Monday: the full suite, the 3,000-record runs included (in a public
+                                  # repository only: see the jobs)
 
 permissions:
   contents: read
@@ -29,6 +30,10 @@ concurrency:
 jobs:
   test:
     name: ${{ matrix.os }}, Python ${{ matrix.python }}
+    # The Monday run is for a public repository, where it is free. In a private one every run of these tests spends
+    # about $2 of the Actions allowance that comes with the owner's account ($12 a month with GitHub Free; the Mac
+    # jobs are most of it), so there the schedule does nothing. A push, a pull request and "Run workflow" still run.
+    if: ${{ github.event_name != 'schedule' || toJSON(github.event.repository.private) == 'false' }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
     strategy:
@@ -89,6 +94,7 @@ jobs:
 
   browser:
     name: ubuntu-latest, Python 3.13, with the pages in Chromium
+    if: ${{ github.event_name != 'schedule' || toJSON(github.event.repository.private) == 'false' }}   # (as above)
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:

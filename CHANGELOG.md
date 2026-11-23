@@ -112,6 +112,8 @@ For developers:
   refused connection, the way a Mac reads the address 0177.0.0.1 (as the public address 177.0.0.1, where Linux
   reads this computer's own and Windows reads none: ReviewDesk asks the system and is right on each), and five test
   names so long that Windows with Python 3.9 could not keep them in an environment variable.
+- The Monday runs of the tests and of the static analysis do nothing while a repository is private, where each run
+  of the tests spends about a sixth of the Actions allowance that comes with a free GitHub account.
 - README.md and CONTRIBUTING.md say how ReviewDesk is written (with Claude, an AI model, to the maintainer's
   direction) and how a change to the way a review's data is kept is reviewed before a release.
 - Python 3.15 is tested. It is the Python that python.org now offers first, so it is what a new Mac user installs:

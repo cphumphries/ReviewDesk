@@ -57,9 +57,11 @@ it is avoidable.
    and macOS with the oldest and the newest Python ReviewDesk supports and the one in the Windows download, and once
    more on Ubuntu with the browser tests. "static analysis" runs Ruff and ESLint (its CodeQL jobs are skipped while
    the repository is private: GitHub offers CodeQL free to public repositories only). Every job must be green. If
-   one fails, fix it, commit, push and wait again. (While the repository is private the runs use the account's
-   included Actions minutes, and a macOS job uses them up several times as fast as a Linux one; in a public
-   repository they are free.)
+   one fails, fix it, commit, push and wait again. While the repository is private, every run of the tests spends
+   about $2 of the Actions allowance that comes with the account ($12 a month with GitHub Free in November 2026),
+   and the Mac jobs are two thirds of that: six runs use up the month. So push as few times as the fixes need, and
+   do not leave the repository private for long. The Monday runs do nothing while it is private. In a public
+   repository every run is free.
 4. **Make the repository public**: **Settings > General**, and at the bottom, in the **Danger Zone**, **Change
    visibility** beside "Change repository visibility"; choose public and confirm (the last button is **Make this
    repository public**). Only now can anyone see it. The workflow runs made while it was private become visible
